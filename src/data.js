@@ -1,26 +1,28 @@
+import { v4 as uuidv4 } from "uuid";
+
 function getSongs() {
   return [
     {
-      id: 1,
-      title: "Epic Dramatic",
-      artist: "FreePD",
+      id: uuidv4(),
+      title: "Song One",
+      artist: "Artist A",
       audio: "/songs/song1.mp3",
-      cover: "https://picsum.photos/200?random=1",
+      cover: "/images/cover1.jpg"
     },
     {
-      id: 2,
-      title: "Pickled Pink",
-      artist: "FreePD",
+      id: uuidv4(),
+      title: "Song Two",
+      artist: "Artist B",
       audio: "/songs/song2.mp3",
-      cover: "https://picsum.photos/200?random=2",
+      cover: "/images/cover2.jpg"
     },
     {
-      id: 3,
-      title: "Mozart Symphony 40",
-      artist: "Musopen",
+      id: uuidv4(),
+      title: "Song Three",
+      artist: "Artist C",
       audio: "/songs/song3.mp3",
-      cover: "https://picsum.photos/200?random=3",
-    },
+      cover: "/images/cover3.jpg"
+    }
   ];
 }
 
